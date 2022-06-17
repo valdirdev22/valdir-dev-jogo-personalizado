@@ -1,0 +1,171 @@
+<!doctype html>
+ <html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./memoria.css">
+    <script src="./memoria.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TREINANDO A MEMÓRIA</title>
+  </head>
+    
+  <body class="box-degrade">
+
+    <input name="mybuttons" type="radio" id="1"/>CAMPO_1<br>
+    <input name="mybuttons" type="radio" id="2"/>CAMPO_2<br>
+    <input name="mybuttons" type="radio" id="3"/>CAMPO_3<br>
+    <input name="mybuttons" type="radio" id="4"/>CAMPO_4<br>
+    <input name="mybuttons" type="radio" id="5"/>CAMPO_5<br>
+    
+    
+    <button onclick="check()">Mudar tela</button>
+
+    <audio id="sucesso"> 
+      <source src="../Bootstrap/audios/maria.mp3" type="audio/mp3" style="display: none;">
+    </audio>
+    <button onclick="playAudio(true)" type="button">Play Audio</button>
+
+  <script>
+ 
+ document.getElementById("1").checked = true;
+ document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_1.svg')";
+  
+
+  function check() {
+
+ if (document.getElementById("1").checked){
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_1.jpeg')";
+  } else if (document.getElementById("2").checked) {
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_2.jpeg')";
+  } else if (document.getElementById("3").checked) {
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_3.jpeg')";
+  } else if (document.getElementById("4").checked) {
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_4.jpeg')";
+  } else {
+    document.body.style.backgroundColor = "#FFFFFF";
+    document.body.style.backgroundImage = "url('../Bootstrap/img_jose/gramado_5.jpeg')";
+}
+  }
+  
+  </script>
+
+  
+        <div class="container">
+            <div id="memoria">
+              <div class="ganhar">
+                  <h4 class="titulo"><b>JOGUINHO DO JOSÉ</b></h4>
+               
+                </div>   
+            <div class="row">
+                 <div class="col">
+                      <p id="contador"><b>00:00</b></p>
+                  </div>
+            </div>
+
+
+            <div class="circulo">
+             
+            </div>
+
+            <div class="wrapper"> 
+                  <div class="row">
+                      <div class="col-3, box">
+                          <img id="i0" class="formato"/> 
+                        
+                        </div>
+                      <div class="col-3, box">
+                          <img id="i1" class="formato"/>
+                        </div>
+                    <div class="col-3, box">                     
+                         <img id="i2" class="formato"/>
+                                        
+                    </div>
+                    <div class="col-3, box">
+                         <img id="i3" class="formato"/>
+                        
+                      </div>  
+                </div>
+
+              <div>
+                    <div id="rodape" class="row"> 
+                      <div class="col">
+                          <button onclick="document.getElementById('player').play()" id="btInicio" type="button"  class="btn btn-lg"><b>Iniciar</b></button>
+                    </div>
+              </div>
+
+                  </div>
+                          
+                <div class="row">
+                      <div class="col-3, box">    
+                           <img id="i4" class="formato"/>
+                      </div>
+
+                        <div class="col-3, box">
+                            <img id="i5" class="formato"/>
+                        </div>
+
+                         <div class="col-3, box">
+                             <img id="i6" class="formato"/>
+                          </div>
+
+                      <div class="col-3, box">
+                           <img id="i7" class="formato"/>
+                        </div> 
+                  </div>
+
+                
+                <div class="row">
+                       <div class="col-3, box">
+                           <img id="i8" class="formato"/>
+                       </div>
+                       <div class="col-3, box">
+                           <img id="i9" class="formato"/>
+                       </div>
+                       <div class="col-3, box">
+                            <img id="i10" class="formato"/>              
+                       </div>
+                        <div class="col-3, box">
+                         <img id="i11" class="formato"/>
+                        </div>
+                  </div>
+
+              </div>
+       </div>
+       </div> 
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<!--
+<script>
+    const button = document.querySelector('button')
+    button.addEventListener('click', function(){
+        const audio = document.querySelector('audio')
+        preload="auto" 
+        audio.autoplay()
+    })
+
+
+  </script>
+  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
